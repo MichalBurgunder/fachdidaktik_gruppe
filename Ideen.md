@@ -1,0 +1,21 @@
+# Ideen Lektionen
+
+- Caesar
+  - Drehscheibe mit 2 Alphabeten
+  - [CyberChef](gchq.github.io/CyberChef)?
+- Monoalphabetische Substitutionschiffre
+  - Zuerst: Mit Symbolen
+  - Dann: Mit Buchstaben
+  - Frequenzanalyse
+- Metadatenanalyse
+  - Satzzeichen/Zahlen werden nicht übersetzt -> Leckt Daten
+- Polyalphabetische Substitutionschiffre
+  - Vermutlich zu komplex
+- One-time pad
+  - Vermutlich zu komplex
+- Block cipher
+  - Vermutlich zu komplex
+- Stream cipher
+  - Vermutlich zu komplex
+- Quantenverschlüsselung
+  - Vermutlich zu komplex
