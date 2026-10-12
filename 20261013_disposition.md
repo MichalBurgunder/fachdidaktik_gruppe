@@ -25,10 +25,10 @@ Ein Vorteil dieses Themas ist, dass es keine besonderen IT-Kenntnisse voraussetz
 
 ## Anvisierte Lernziele (sehr allgemein, in zwei bis vier Sätzen)
 
-1. Die Begriffe Verschlüsselung und Entschlüsselung sowie die Fachbegriffe in diesem Bereich kennen.
+1. Die Begriffe Verschlüsselung und Entschlüsselung sowie die Fachbegriffe in diesem Bereich verstehen und in kompletten Sätzen beschreiben zu können.
 2. Den Unterschied zwischen Kryptanalysis und Kryptographie kennen.
 3. Verschiedene Verschlüsselungsmethoden kennen und anwenden können: Transposition, einfache monoalphabetische Substitution und polyalphabetische Substitution.
-4. Die Schwächen dieser Methoden kennen und ihre historische Entwicklung sowie die Logik dahinter verstehen. Die Schülerinnen und Schüler sollen intuitiv verstehen, dass die Kryptologie ein «Kampf» zwischen der Kryptographie und den Kryptanalysis ist.
+4. Die Schwächen dieser Methoden kennen, die Logik dahinter und sowie die historischen Zusammenhänge zwischen den verschiedenen Methoden. Die Schülerinnen und Schüler sollen intuitiv verstehen, dass die Kryptologie ein «Kampf» zwischen der Kryptographie und den Kryptanalysis ist.
 
 ## Grobe Kapitelstruktur mit stichwortartiger Beschreibung von Konzepten und Inhalten
 
