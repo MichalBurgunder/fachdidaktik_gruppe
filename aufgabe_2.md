@@ -16,4 +16,15 @@ Mit Caesar zu einfach, kann auch gezeigt werden dass alle Verschlüsselungen die
 
 ...
 
-# b. 
+# b. Leitidee & Algorithmisches Denken
+Die Leitidee der Lektionen ist es, durch bestimmte, strukturierte Methoden Daten von einer Sichtweise zu einer anderen zu ändern. Bei jedem Algorithmus der in den Lektionen angeschaut wird, wird vorausgesetzt, dass die Schüler schrittweise die Veränderungen zu den Daten machen. Die Verifikation davon ist auch eindeutig: Wenn sie es schaffen "algorithmisch zu denken", dann finden sie auch heraus was die versteckte Nachricht ist, die sich im Text versteckt. Das heisst, das nur wenn die Schüler lernen schrittweise durch den Algorithmus durchzugehen, ob es um das verschlüsseln oder entschlüsseln geht, können sie an die Lösung kommen. Da die Lösung nicht eindeutig ist, lernen sie auch den Sinn des algorithmischen Denkens, was auch ihre Frage beantwortet, wozu sie dies gebrauchen können. 
+
+# c. Dispositionziele
+Zwei Dispositionesziele:
+1. Das erste Ziel, ist es die Schüler zum kritischen Reflektion von Unsinndaten anzustreben. Da viele Daten in einer Art oder einer Anderen als Unsinn betracted werden kann, kann eine kleine Analyse schon kleine Krümmel an Informationen beschaffen. In der Kryptologie, sind diese Krümmel relativ klein und versteckt, sind aber bei vielen anderen Arten von Daten eundeutiger. Kryptologie soll Sie an die Grenzen brigen: Sie sollen, jedes mal wo sie irgendwelche Daten vors Gesicht bekommen, sofort eine Analyse machen würden über den Inhalt der Daten, ob dies jetzt nur schnell im Kopf, oder ob es mit ausführlicheren Tolls ist, wie bei der Kryptologie.
+2. Schüler würden, anstatt der Angst vor etwas Unverständlichem, sorgenlos versuchen herauszufinden wie ein bestimmtes, unbekanntes System funktioniert. Einerseits überlegen sie viel mehr, aber vom Verhalten her, sind sie ruhiger, und konzentrieter dran. Das zweite Dispositionsziel ist ist keine Angst vor dem Unbekanten zu haben. 
+
+# d. 
+Der Schüler wird beherrschen mit verschiedene Denkarten umzugehen, die Datenanpassungen beinhaltet. Obwohl wir nur von Daten reden, insbesondere Buchstaben, können die Denkweisen die sie gelernt haben auf andere, unabhängige Systeme übertragen. Mit Substitution und Transposition, sind zwei Arten von Informationenanpassung vorgestellt worden. In einem neuen System/Umbebung, würde eine kryptische Sprache beherrscht (wie z. B. beim lernen einer neuen Sprache) , die mit vorsichtigem Denken herausgefunden werden kann. Dabei stehen Ihnen zwei Tools zur verfügung: eines ist ein Prozess des "Ersätzens", und die andere ist eine physische Anpassung. Beides dieser Art Denkens kommt in der Welt als Sprache vor. Dabei ist die Kryptanalysis der vorgestellten Methoden auch wiederum anders bei einem Algorithmus, wie beim anderen. Nichts desto trotz, führt dies dazu, dass Schüler jedes mal aufs neue eine Situation analysieren, und sich Gedanken machen bevor sie überhaupt etwas an einem System geändet oder sogar interagiert haben. 
+
+
