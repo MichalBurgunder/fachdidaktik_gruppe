@@ -50,6 +50,22 @@ Mit dieser Übung habt ihr die Grundidee der Caesar-Verschlüsselung kennengeler
 
 \newpage
 
+## Operationale Lernziele
+
+Nach dieser Lektion könnt ihr …
+
+- Substitution und Transposition unterscheiden und den Unterschied anhand eines Beispiels erklären.
+- Nachrichten mit der Caesar-Verschlüsselung ver- und entschlüsseln, wenn der Schlüssel bekannt ist.
+- das Klartextalphabet und das Geheimtextalphabet eines Verfahrens benennen.
+- Methode und Schlüssel unterscheiden und beide in einem konkreten Beispiel bestimmen.
+- die Buchstaben eines Geheimtexts zählen und mithilfe ihrer Häufigkeit einen möglichen Caesar-Schlüssel ableiten.
+- einen vermuteten Schlüssel überprüfen, indem ihr den Text entschlüsselt und seine Verständlichkeit beurteilt.
+- Nachrichten mithilfe einer vorgegebenen Tabelle homophon ver- und entschlüsseln.
+- eine eigene Zuordnungstabelle erstellen, in der häufige Buchstaben mehrere Geheimtextsymbole erhalten.
+- anhand eines Beispiels erklären, wie homophone Substitution die Häufigkeitsanalyse erschwert und warum sie trotzdem keine Sicherheit garantiert.
+
+\newpage
+
 ## Substitution
 
 In den ersten Kapiteln haben wir verschiedene Transpositionsverfahren kennengelernt. Dabei wurden die Buchstaben nach bestimmten Regeln umgeordnet, etwa bei der Skytale oder beim Gartenzaun-Verfahren.
