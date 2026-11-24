@@ -106,7 +106,7 @@ Diese Verschlüsselungsmethoden sind aber sehr schwach, da Sie nach 26 Versuchen
 alle möglichen Texte kennen.
 Das Problem ist also, dass alle Buchstaben immer gleich verschlüsselt werden.
 
-::: {.exercise}
+::: {.exercice}
 
 **Frage 1:**
 
