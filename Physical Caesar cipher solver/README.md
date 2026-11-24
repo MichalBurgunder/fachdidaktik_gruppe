@@ -47,3 +47,4 @@ The parameters you can change are as follows:
 - `offset`: The space reserved for the letter
 - `radius_inner`: The radius until the inner line of the smaller ring
 - `radius_outer`: The radius until the outer line of the bigger ring
+- `use_numbers`: If `true`, uses numbers instead of the Latin alphabet

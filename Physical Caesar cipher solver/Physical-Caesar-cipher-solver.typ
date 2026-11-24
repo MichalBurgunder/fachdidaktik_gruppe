@@ -9,12 +9,28 @@
 /// The radius until the inner line of the smaller ring
 #let radius_inner = float(sys.inputs.at("radius_inner", default: 5))
 /// The radius until the outer line of the bigger ring
-#let radius_outer = float(sys.inputs.at("radius_outer", default: radius_inner + 2 * offset))
+#let radius_outer = float(sys.inputs.at(
+  "radius_outer",
+  default: radius_inner + 2 * offset,
+))
+
+/// Use letters or numbers, depending on the input arguments
+#let use_numbers = if sys.inputs.at("use_numbers", default: "false") == "true" {
+  true
+} else {
+  false
+}
 
 /// The alphabet that is used in the ring
-#let alphabet = range(26).map(index => str.from-unicode(
-  str.to-unicode("A") + index,
-))
+#let alphabet = if use_numbers {
+  range(10).map(index => str.from-unicode(
+    str.to-unicode("0") + index,
+  ))
+} else {
+  range(26).map(index => str.from-unicode(
+    str.to-unicode("A") + index,
+  ))
+}
 
 /// Creates a ring of letters
 ///
