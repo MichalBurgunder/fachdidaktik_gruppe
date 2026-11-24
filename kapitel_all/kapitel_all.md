@@ -8,18 +8,57 @@ toc: true
 toc-title: Inhaltsverzeichnis
 toc-depth: 3
 numbersections: true
+title: "Einführung in der Kryptologie"
+subtitle: "Michal Burgunder, Lars Waldvogel, Ludovic Sauthier"
 ---
 
 <!--
 pandoc kapitel_all.md -o kapitel_all.pdf --pdf-engine=xelatex --lua-filter=encadres.lua --toc --toc-depth=3 --number-sections
 -->
 
+\newpage
+
+# Auftrag 1
+
+## Analyse des Stoffs
+
+Obwohl bei der professionelle Kryptopgrahie viel Mathematik als Vorwissen erwartet wird, dürfen wir die Gynmasiasten nicht überfordern. Wir stellen zuerst die Ideen die der Kryptographie vor: Wie kann man Geheimmitteilungen einander zusenden lassen.
+
+Inder ersten Lektion würden wir die vier LEktionen kurz vorstellen, und was wir ihnen in diesen Lektionen lehren werden. 
+Nach einem Beispiel vom Skytale, sowie auch der Gartenzaunverschlüsselung, kommen die zwei Hauptprozesse **Verschlüsselung** und **Entschlüsselung** ins Spiel. Bei der **Verschlüsselung**, handelt es sich irgendeinen Text in eine Geheimnachricht zu verändern, und bei der **Entschlüsselung** kan man den Text wieder herstellen. Diese zwei Begriffe stehen auch in Relation zu **Klartext** und **Chiffretext**, welches mit der Einführung zu Skytale und dem Gartenzaunverschlüsselung offenbar wird: Bei der Verschlüsselung nutzt man Klartext, bei der Entschlüsselung, den Chiffretext. All diese Begriffe sind wahrscheinlich neu für die Schüler, die möglicherweise noch nie eine Lektion in Kryptographie hatten. Da diese vier Wörter das Fundament der Kryptopgraphie bilden, lohnt es sich da noch ein Bild davon zu erstellen.
+
+![Bild: Analyse des Stoffs](./woerter.png)
+
+Da beide Methoden **Transposition** brauchen, wird diese Wort erklärt. Diese ist eine bestimmte Methode Daten zu verschlüsseln. 
+
+Sobald diese paar Ideen eingeführt wurden, können sich die Schüler überlegen wie genau man Dinge entschlüsselt. Bei der Skytale und dem Gartenzaumverschlüsselung (sowie allen Transpositionsmethoden), ist es klar, dass man nur eine Wahl an Transpositionen hat: Sobald man den Trick kennt, ist der Sinn der Sache verloren, und somit, geht es zum Thema **Substitution**, eine andere Art zu Verschlüsseln. Dabie wird hier nun zum ersten mal der **Schlüssel** wird beschrieben, was den Schülern zeigt, dass man mit einem **Shared Secret** Daten verschlüsseln kann. Dabei steht **Schlüssel** in direkter Relation zu **Verschlüsseln** und **Entschlüsseln**. Bei Symmetrischen Kyptosystemen (die Systeme die wir unterrichten würden), ist dies der gleiche Schlüssel, weswegen wir den Metaphor gut nutzen können: Wie ein Schliessfach. 
+
+Anstatt dass wir nun nur __eine__ Möglichkeit hat wie man entschlüsselt oder verschlüsselt, wie bei der Transposition, bietet die Caesarverschlüsselung mehrere Möglichkeiten an. Ohne dem Wissen von der Verschiebung können wir es nicht lesen. Aber wenn wir drauf beharren, können wir trotzdem den Klartext herausfinden, indem wir den Schlüssel mit einer Frequenzanalyse **finden**. Man würde den Schülern vorzeigen wie man Caesar knacken kann, indem man die Anzahl Buchstaben zählt, und daraus die Verschiebung herausfinden kann. So ein Verfahren ist eine **Kryptanalyse**, ein Prozess einen Chiffretext ohne Schlüssel in Klartext zu verwandeln. Da nun Schüler dies selber gemacht haben, ist die Caesarverschlüssung wenig nützlich, und es muss eine neue Methode entwickelt werden. Dieser Prozess nennt sich **Kryptographie**. D.h. **Kryptographie** = neue Methoden entwicklen, **Kryptanalysis** = Versuchung den Code zu knacken.
+
+Mit Caesar zu einfach, kann auch gezeigt werden dass alle Verschlüsselungen die nur einen Buchstaben mit einem anderen Ersetzen nicht gut genug ist. Darum würde man **monoalphabetische Substitution** mit **polyalphabetischer Substitution vergleichen, insbesondere mit dem Vignère Chiffre. Wieder kommt der Schlüssel vor, was dann zurück zur Kryptographie führt, und wiederum in die Kryptoanalyse.
+
+## Leitidee & Algorithmisches Denken
+Die Leitidee der Lektionen ist es, durch bestimmte, strukturierte Methoden Daten von einer Sichtweise zu einer anderen zu ändern. Bei jedem Algorithmus der in den Lektionen angeschaut wird, wird vorausgesetzt, dass die Schüler schrittweise die Veränderungen zu den Daten machen. Die Verifikation davon ist auch eindeutig: Wenn sie es schaffen **algorithmisch zu denken**, dann finden sie auch heraus was die versteckte Nachricht ist, die sich im Text versteckt. Das heisst, das nur wenn die Schüler lernen schrittweise durch den Algorithmus durchzugehen, ob es um das verschlüsseln oder entschlüsseln geht, können sie an die Lösung kommen. Da die Lösung nicht eindeutig ist, lernen sie auch den Sinn des algorithmischen Denkens, was auch ihre Frage beantwortet, wozu sie dies gebrauchen können. 
+
+## Dispositionziele
+Zwei Dispositionesziele:
+
+1. Das erste Ziel, ist es die Schüler zum kritischen Reflektion von Unsinndaten anzustreben. Da viele Daten in einer Art oder einer Anderen als Unsinn betrachtet werden kann, kann eine kleine Analyse schon Krümmel an Informationen beschaffen. In der Kryptologie, sind diese Krümmel relativ klein und versteckt, sind aber bei vielen anderen Arten von Daten eindeutiger. Kryptologie soll sie an die Grenzen bringen: Sie sollen, jedes mal wo sie irgendwelche Daten vors Gesicht bekommen, sofort eine Analyse machen würden über den Inhalt der Daten, ob dies jetzt nur schnell im Kopf, oder ob es mit ausführlicheren Tools gemacht wird.
+2. Schüler würden, anstatt der Angst vor etwas Unverständlichem, sorgenlos versuchen herauszufinden wie ein bestimmtes, unbekanntes System funktioniert. Einerseits überlegen sie viel mehr, aber vom Verhalten her, sind sie ruhiger, und konzentrieter dran. Das zweite Dispositionsziel ist es keine Angst vor dem Unbekannten zu haben. 
+
+## Operationalisierte Lernziele
+
+Operationalisierte Lernziele werden am Anfang von jedem Kapitel angegeben. 
+
+<!-- Der Schüler wird beherrschen mit verschiedene Denkarten umzugehen, die Datenanpassungen beinhaltet. Obwohl wir nur von Daten reden, insbesondere Buchstaben, können die Denkweisen die sie gelernt haben auf andere, unabhängige Systeme übertragen. Mit Substitution und Transposition, sind zwei Arten von Informationenanpassung vorgestellt worden. In einem neuen System/Umbebung, würde eine kryptische Sprache beherrscht (wie z. B. beim lernen einer neuen Sprache) , die mit vorsichtigem Denken herausgefunden werden kann. Dabei stehen Ihnen zwei Tools zur verfügung: eines ist ein Prozess des **Ersätzens**, und die andere ist eine physische Anpassung. Beides dieser Art Denkens kommt in der Welt als Sprache vor. Dabei ist die Kryptanalysis der vorgestellten Methoden auch wiederum anders bei einem Algorithmus, wie beim anderen. Nichts desto trotz, führt dies dazu, dass Schüler jedes mal aufs neue eine Situation analysieren, und sich Gedanken machen bevor sie überhaupt etwas an einem System geändet oder sogar interagiert haben.  -->
 
 \newpage
 
-# Einführung in die Kryptologie
+# Auftrag 2
 
-## Einführung
+## Einführung in die Kryptologie
+
+### Einführung
 
 Bevor wir ins Thema einsteigen, hören wir uns **UVB-76** an.
 
@@ -82,7 +121,7 @@ Es geht bei der Sicherheit also nicht nur darum, eine Nachricht zu versenden, so
 
 :::
 
-## Operationale Lernziele
+### Operationale Lernziele
 
 Nach dieser Lektion könnt ihr …
 
@@ -94,11 +133,11 @@ Nach dieser Lektion könnt ihr …
 - dieselbe Methode mit unterschiedlichen Schlüsseln anwenden und die Ergebnisse vergleichen.
 - das Kerckhoffs-Prinzip in eigenen Worten erklären und erkennen, wenn ein einfaches System dagegen verstösst.
 
-## Grundkonzept
+### Grundkonzept
 
 Bevor wir weitermachen, klären wir einige Begriffe, die wir im weiteren Verlauf wieder verwenden.
 
-![Begriffe](./p2.png)
+![Grundkonzept](./p2.png)
 
 1. Diese Person ist der **Absender**. Sie verschickt eine Nachricht.
 2. Diese Person ist der **Empfänger**. Sie möchte die erhaltene Nachricht lesen können.
@@ -109,7 +148,7 @@ Bevor wir weitermachen, klären wir einige Begriffe, die wir im weiteren Verlauf
 
 
 
-## Kryptografie
+### Kryptografie
 
 Mit den Methoden zum Schutz von Informationen beschäftigt sich die **Kryptografie**. Sie entwickelt Verfahren und Algorithmen, mit denen Informationen geheim gehalten werden können.
 
@@ -228,7 +267,7 @@ Die Sicherheit beruht vollständig darauf, dass die Methode geheim bleibt. Sobal
 
 
 
-## Zusammenfassung und Ausblick
+### Zusammenfassung und Ausblick
 
 In dieser Lektion haben wir gesehen, warum Informationen geschützt werden müssen: sowohl **während der Übertragung**, etwa per Funk oder über das Internet, als auch **bei der lokalen Speicherung** auf einem Computer oder Telefon. Eine Nachricht kann unterwegs abgefangen oder auf dem Gerät ohne Erlaubnis gelesen werden. Die Verschlüsselung soll ihre **Vertraulichkeit** schützen. Sie soll also verhindern, dass unbefugte Personen den Inhalt lesen können.
 
@@ -243,7 +282,7 @@ In der nächsten Lektion lernen wir konkrete Beispiele für Transpositionsversch
 
 
 
-## Übungen zur Lernkontrolle
+### Übungen zur Lernkontrolle
 
 Mit den folgenden Übungen könnt ihr überprüfen, was ihr gelernt habt.
 
@@ -291,15 +330,205 @@ Alice und Bob verwenden eine Verschlüsselungsmethode mit einem geheimen Schlüs
 
 \newpage
 
-# Kapitel 2
+## Transposition
 
-**ToDo**: @Michael
+### Rückblick auf die Einführung
+
+Jetzt wo die Kryptographie eingeführt worden ist, stellt sich die Frage: Was für Arten von Transpositionen gibt es? Als erstes gehen wir nochmals durch die Begriffe die wir letztes mal gesehen haben:
+
+Bevor wir weitermachen, klären wir einige Begriffe, die wir im weiteren Verlauf wieder verwenden.
+
+![Begriffe](./1_rückblick.png)
+
+Sie sollen nochmals die Wörter einorden:  **Absender**, **Empfänger**, **Klartext**, **Verschlüsselung**, **Geheimtext**, **Entschlüsselung**
+
+Nun wird das Material der Transposition nochnmals angeschaut:
+
+::: {.exercice}
+
+**Fragen 1:**
+
+- Was ist Transposition schon wieder (Dies sollte ein Enführungsaufgabe sein, das zurück an die vorherige Lektion erinnert)
+
+:::
+
+
+### Operationale Lernziele
+
+Nach dieser Lektion könnt ihr
+
+- Nachricht mit Skytale und dem Gartenzaun Algorithmus verschlüsseln und entschlüsseln
+- Erklären was der Schlüssel ist für Skytale
+- Verstehen wie man den Skytale entschlüsseln/knacken kann, ohne dem Schlüssel
+- Den Ablauf vom Gartenzaun Algorithmus Schritt für Schritt durchführen
+- Erklären welchen Einfluss die Länge des Passworts auf den endgültigen Geheimtext hat im Gartenzaun Algorithmus 
+- Den ungefähr gebrauchten Zeitaufwand um einen Gartenzaun Geheimtext zu knacken
+
+
+### Begriffe
+- **Skytale**: ein Transpositionsalgoriothmus mit dem man Nachrichten verschlüsseln kann. Dabei nutzt man einen Stab, und ein Band. 
+- **Gartenzaun**: ein Transpositionsalgoriothmus mit dem man Nachrichten verschlüsseln kann. Dafür braucht man nur etwas zum schreiben.
+- **Schlüssel**: ein Informationsartefakt mit dem man verschlüsselte Nachrichten entschlüsseln kann. Skytale und Gartenzaun haben beide Schlüssel
+- **Permutation**: eine bestimmte Reihenfolge von vielen potenziellen Reihenfolgen. Schlüssel sind oft eine bestimmte Permutation (Wahl an Reihenfolge), die, wegen der grossen Zahl an potenziellen Reihenfolgen nicht erraten werden kann.
+- **Sprache**: Die Sprache in dem ein Klartext geschrieben 
+...
+
+Die Art von Transposition braucht viel Papier und Vorsicht, zum einen mal es zu verschlüsseln und entschlüsseln. Vor 2500 Jahren aber, gab es sehr wenig Papier und etwas zu schreiben, was auch der Grund ist warum die meisten Menschen damals dies nie gelernt haben. Für die Leute die lesen und schreiben konnten, waren typischerweise reiche Leute sowie Politiker oder Generale. 
+
+Um dem Militär Weisungen zu geben, nutzte man etwas namens ein Skytale, um Nachrichten zu verschlüsseln. Diese Technologie bestand aus einem **Stock**, und einem **Band**, was viel gänger war. Damit konnte man verschlüsselte Nachrichten verschicken, ohne dass andere Leute die Nachricht lesen konnten. Wir werden genau diesen Prozess durchführen, aber nur mit unseren Bleistiften und ein wenig Papier. Dabei werdet ihr euren Klartext auswählen den ihr verschlüsseln wollt, werdet ihn anschliessend in Geheimtext umwandeln, und ihn an einen Freund "schicken". 
+
+<!-- 
+**Material:**
+ mit verschlüsseltem Text. Der Lehrer sollte auch dabei einen grossen Stab mitbringen (oder einen langen Holzblock), sowie auch ein Band (aus Ducktape und Quadratischen Papier z. B.) um Ihnen zu zeigen wie Skytale funktioniert. Weitern, sollen Streifen ausgedruckt werden die Geheimtext enthalten, die mit Stiften entschlüsselt werden können.  -->
+
+::: {.exercice}
+
+**Auftrag:** 
+
+Teil 1
+Gegeben wird Ihnen ein Geheimtext. Sie sollen mit Hilfe von Stiften und lange Papierbänden selber probieren herauszufinden wie man einen Geheimtext auf langen Streifen Papier, geschrieben mit Hilfe von Skytale, entschlüsselt. Sie sollen auch lernen wie man Geheimtext selber verschlüsselt.
+
+Teil 2
+Nun wird ein neuer Streifen Text gegeben. Dieser soll auch entschlüsselt werden, jedoch, kann man dies nicht mit nur Bleistiften machen. Der Trick dafür, ist dass man den Streifen um zwei Bleistfte wickeln muss. 
+
+:::
+
+![Bild: Skytale](./2_skytale.png)
+
+::: {.exercice}
+
+**Fragen 2:**
+- Wie kann man die Nachricht entschlüsseln?
+
+**Antwort:** 
+
+Der Geheimtext kann entschlüsselt werden indem man den Streifen Papier mit dem Text um den Stift wickelt. Dann kann man den Text Zeile für Zeile lesen
+
+:::
+
+::: {.exercice}
+
+**Fragen 3:**
+- Was ist der Schlüssel um die Nachricht zu entschlüsseln?
+
+
+**Antwort:** 
+
+Der Schlüssel beinhaltet nur die Dicke des Stabes. Um genau zu sein, ist es der Umfang der definiert was der Schlüssel ist. Das heisst, dass der Schlüssel ein Stab ist mit dem gleichen Umfang, auch den der Stab möglicherweise dünner oder dicker ist.
+
+:::
+
+::: {.exercice}
+
+**Fragen 4:**
+- Ist dies ein guter Schlüssel? Warum, warum nicht?
+
+**Antwort:** 
+
+Da Stäbe, in praktischer Hinsicht, keinen shr grossen Umfang haben können, ist die Transposition auch beeinträchtigt: Es können nur bestimmte Werte genutzt werden, die die Transposition definiert. 
+
+:::
+
+
+Es stellt sich heraus, dass diese Methode doch nicht sehr gut ist, da mit dieser Methode man alle Buchstaben um die gleiche Anzahl Buchstaben verschieben muss. Wir, innerhalb von ein paar Minuten haben herausgefunden wie man das macht, auch wenn ich euch gesagt habe, dass der Stift wichtig ist beim Entschlüsseln des Textes.
+
+Bei der Transposition handelt es sich ja nur um das Verschieben von Buchstaben, wobei das Verschieben irgendwie durch ein Schlüssel verriegelt sein soll. Aber, es heisst nicht dass wir alle Buchstaben gleich verschieben müssen. Beim Skytale, ist das eben genau der Fall. Das heisst, dass der Schlüssel typischerweise nur eine kleine Zahl ist, wie z. B. 5. Nun würden wir, mit Hilfe vom Zigzagschreiben die Buchstabenverschiebung vertuschen. 
+
+**Kurze Vorstellung der Idee**. 
+
+Der Gartenzaun Algorithmus beginnt mit einer Verschiebung, beinhaltet jedoch den letzten Teil, wo man ein Passwort wählen soll. Dabei wird zuerst der erste Schritt gezeigt, wie man den Klartext schreiben würde, und daraus einen Geheimtext extrahieren würde. (noch soll kein Passwort genutzt werden). 
+
+![Bild: Gartenzaun](./3_gartenzaun.png)
+
+::: {.exercice}
+
+**Fragen 5:**
+- Wie sieht es nun mit der Verschiebung aus?
+
+**Antwort:** 
+
+Nun werden einige Buchstaben um eine Zahl verschoben, andere um eine andere Zahl
+
+- Was ist der "Schlüssel" hier? 
+
+**Antwort:** 
+
+Der Schlüssel ist jetzt die Dicke des Gartenzauns, der die Verschiebung der Buchstaben definiert
+
+:::
+
+Es stellt sich heraus, dass man jetzt nichts weiteres wissen muss, um den Code zu knacken, lediglich die Grösse des Zauns. Im Moment, kann jeder jede Nachricht mit ein wenig Zeit knacken, sodass wir keine Nachrichten schicken können damit sie sicherlich geheim bleiben. Nun soll noch die Reihenfolge der verschiedenen Zeilen auch noch gemischt werden, anhand von einer **Permutation**. 
+
+Diese Methode wird ihnen vorgestellt, und es wird ihnen gezeigt wie man so einen Schlüssel nutzen kann. Mit Hilfe vom Annex: Gartenzaun, sollen die Schüler einen Freund/in holen, ihre Schlüssel austauschen, und einander Nachrichten schreiben. Dabei brauchen sie nur die Vorlage die ihnen gegeben wird. 
+
+::: {.exercice}
+
+**Fragen 6:**
+- Was braucht es, damit man den Code von anderen knacken kann?
+
+**Antwort:** 
+
+Es braucht nun den Schlüssel (das **Passwort**) um den Geheimtext in Klartext umzuwandeln. Obwohl die Länge des Passworts eindeutig ist, gibt es viele verschiedene Reiheinfolgen die benutzt werden können. Darum ist es auch schwer den Code von anderen zu entschlüsseln.  
+
+:::
+
+Es folgt eine kurze Diskussion über welches dieser Methoden besser ist als die andere. Abei kann man folgendes erwähnen
+
+- Die Art der Schlüssel (physischer oder wörtlicher)
+- Dauer zum Verschlüsseln, Entschlüsseln
+- Dauer es ohne den Schlüssel zu knacken
+- **Das egal was der Schlüssel und was die Transpositionsmethode ist, sind alle Buchstaben die genutzt werden im Geiheimtext drin**
+
+### Zusammenfassung und Ausblick
+
+Mit Transpositions Methoden ist es immer der Fall, dass alle genutzten buchstaben vorhanden ist. Das heisst, das wenn jemand gut mit **Anagrammen** arbeiten kann, können kurze Nachrichten geknackt werden, inbesondere **wenn man einen bestimmten Text erwartet**, wie z. B. wenn im Geiheimtext der Buchstabe **ü** vorkommt, und man inen Stadtnamen erwartet, kann es sein das die Stadt "Zürich" erwähnt wird. 
+
+Um dies zu vertuschen, braucht es eine neue Methode, nämlich die **Substitution**, umd Buchstaben in anere Buchstaben umzuwandeln. Dies hat auch seine Schwächen, aber, die werden in der nächsten Lektion angesprochen.
+
+### Übungen zur Lernkontrolle
+
+::: {.exercice}
+
+**Übung 1**
+
+Nimm an du hast die folgenden Geheimtexte vor dir: 
+
+1. `opgewrseimkriomezunnusngdrekaihe`
+2. `ttyxyxyvfjcispycgillnfkulurvenvu`
+
+welches dieser Geheimtexte höchstwahrschienlich kein Text der mit Hilfe von der Transpositions Methode geschrieben wurde?
+
+**Antwort**: 2. Der zweite Geheimtext hat viele **x** Buchstaben, sowie auch drei **y**. Diese Buchstaben kommen in der Detuschen und andere Lateinbasierenden Sprachen kaum vor. Weiterhin gibt es 
+
+:::
+
+::: {.exercice}
+
+**Übung 2**
+
+Nehmen wir an, wir haben einen Klartext, den wir mit der Skytale verschlüsseln. Mit diesem Geheimtext, verschlüsseln wir ihn nun mit dem Gartenzaun Algorithmus, und bekommen einen neuen Geheimtext. Ist dieser Geheimtext schwieriger zu knacken als wenn man nur einen der Algorhtmen nutzt? Warum?
+
+**Antwort**: Ja. In dieser neuen Methode müssel wir zwei Schlüssel wissen um den Algorithmus zu knacken. Obwohl wir für Skytale nur ein paar realistische Zahlen als Schlüssel haben können, ist es unmöglich zu wissen welches dieser Zahlen richtig ist ohne den Schlüssel zum Gartenzaun zu haben. Somit kann Schlüssel mehrere Werte haben, und darum ist der Algorithmus schwerer zu knacken. Man muss sich aber auch einen längeren Schlüssel merken.
+
+:::
+
+::: {.exercice}
+
+**Übung 3: Herausforderung**
+
+Sagen wir, wir möchten Skytale als Verschlüsselungs Methode einführen. Wir möchten gerne aber den Schlüssel frei wählen, anstatt dass wir einen bestimmten Stab nutzen. Jedoch, sollte der Stab rund sein. Wenn unsere Buchstaben 4cm gross sind, und unser Schlüssel 7 sein sollte, was sollte der Durchmesser des Stabes sein?
+
+**Antwort**: 
+
+Da jeder Buchstabe auf den Stab projiziert sein soll, heisst das, dass der Umfang des Kreises 4cm * 7 = 28cm sein sollte. Wir wissen auch, dass der Umfang eines Kreises `Umfang eines Kreises = Durchmesser * pi` ist. Wenn wir nun fü den Durchmesser lösen, haben wir `(Umfang eines Kreises) / pi = Durchmesser`. Wenn wir unsere Zahlen reintun, bekommen wir `28cm / pi = 8.9cm`.
+
+:::
 
 \newpage
 
-# Monoalphabetische Substitution
+## Monoalphabetische Substitution
 
-## Einführung
+### Einführung
 
 In der letzten Lektion habt ihr gelernt, wie Transpositionsverfahren funktionieren und welche Probleme sie mit sich bringen.
 
@@ -336,7 +565,7 @@ Beantwortet zu zweit die folgenden Fragen:
 Mit dieser Übung habt ihr die Grundidee der Caesar-Verschlüsselung kennengelernt. Caesar selbst verwendete eine Verschiebung um drei Stellen, um seine Briefe zu verschlüsseln.
 
 
-## Operationale Lernziele
+### Operationale Lernziele
 
 Nach dieser Lektion könnt ihr …
 
@@ -351,7 +580,7 @@ Nach dieser Lektion könnt ihr …
 - anhand eines Beispiels erklären, wie homophone Substitution die Häufigkeitsanalyse erschwert und warum sie trotzdem keine Sicherheit garantiert.
 
 
-## Substitution
+### Substitution
 
 In den ersten Kapiteln haben wir verschiedene Transpositionsverfahren kennengelernt. Dabei wurden die Buchstaben nach bestimmten Regeln umgeordnet, etwa bei der Skytale oder beim Gartenzaun-Verfahren.
 
@@ -392,7 +621,7 @@ Entschlüsselt den folgenden Text mit `ROT3`:
 :::
 
 
-## Einführung in die Häufigkeitsanalyse
+### Einführung in die Häufigkeitsanalyse
 
 Bei den bisher betrachteten Substitutionsverfahren steht derselbe Buchstabe im Geheimtext immer für denselben Buchstaben im Klartext. Schaut euch nochmals das Beispiel aus Frage 2 an:
 
@@ -458,7 +687,7 @@ Diese Methode bietet also keinen ausreichenden Schutz. Die Häufigkeitsanalyse l
 :::
 
 
-## Ein Lösungsansatz (homophone Substitution)
+### Ein Lösungsansatz (homophone Substitution)
 
 Ein Ansatz, um diese Analyse zu erschweren, besteht darin, die Häufigkeiten der Symbole gleichmässiger zu verteilen. Dadurch wird es schwieriger, die häufigsten Klartextbuchstaben zu erkennen.
 
@@ -474,7 +703,7 @@ Dafür müssen wir unser Geheimtextalphabet erweitern. Ein Klartextbuchstabe kan
 Das nennt man **homophone Substitution**. «Homophon» bedeutet hier, dass verschiedene Zeichen im Geheimtext für denselben Buchstaben im Klartext stehen können.
 
 
-## Verschiedene Alphabete
+### Verschiedene Alphabete
 
 Merkt euch die Unterscheidung zwischen zwei Alphabeten:
 
@@ -527,7 +756,7 @@ Bei einer **homophonen Verschlüsselung** kann ein Buchstabe des Klartextalphabe
 :::
 
 
-## Zusammenfassung und Ausblick
+### Zusammenfassung und Ausblick
 
 In dieser Lektion haben wir die **Substitution** kennengelernt. Anders als die Transposition, die Buchstaben verschiebt, ersetzt sie die Buchstaben des Klartexts durch andere Buchstaben oder Symbole.
 
@@ -545,7 +774,7 @@ Wir haben auch den Unterschied zwischen **Methode** und **Schlüssel** wieder au
 In der nächsten Lektion verwenden wir nicht mehr nur ein einziges Zielalphabet, sondern **mehrere Geheimtextalphabete**. Welches Alphabet jeweils verwendet wird, bestimmt ein Schlüssel. Das ist das Prinzip der **polyalphabetischen Substitution**, das wir anhand der **Vigenère-Verschlüsselung** kennenlernen werden. Derselbe Klartextbuchstabe kann dann je nach seiner Position in der Nachricht unterschiedlich verschlüsselt werden.
 
 
-## Übungen zur Lernkontrolle
+### Übungen zur Lernkontrolle
 
 ::: {.exercice}
 
@@ -610,9 +839,9 @@ Beginnt bei jeder neuen Nachricht wieder mit dem ersten Symbol.
 
 \newpage
 
-# Polyalphabetische Substitution
+## Polyalphabetische Substitution
 
-## Einführung
+### Einführung
 
 Nachdem wir uns in der letzten Lektion mit der monoalphabetischen und der
 homophonen Substitution beschäftigt haben, betrachten wir diese Woche die
@@ -626,7 +855,7 @@ angreifen können indem wir z.B. Teile des Klartextes erraten.
 Für mich ist es wichtig, dass Sie verstehen, wie die Methode funktioniert und
 unter welchen Umständen sie geknackt werden kann. Wir werden zuerst eine Variante davon anschauen, sie selber anwenden und anschliessend anzugreifen versuchen.
 
-## Operationalisierte Lernziele
+### Operationalisierte Lernziele
 
 Nach diesem Kapitel könnt ihr …
 
@@ -639,7 +868,7 @@ Nach diesem Kapitel könnt ihr …
 - beim Zahlenbeispiel einen Geheimtext gezielt verändern und damit zeigen, dass **Verschlüsselung allein keine Integrität garantiert**.
 - einen **Crib** erklären und mithilfe der Enigma-Eigenschaft „Kein Buchstabe wird auf sich selbst abgebildet“ unpassende Zuordnungen ausschliessen.- einen **Crib** erklären und mithilfe der Enigma-Eigenschaft „Kein Buchstabe wird auf sich selbst abgebildet“ unpassende Zuordnungen ausschliessen.
 
-## Die Vigenère-Chiffre
+### Die Vigenère-Chiffre
 
 In der letzten Lektion haben wir uns mit der monoalphabetischen Substitution
 beschäftigt.
@@ -772,7 +1001,7 @@ Beim Schlüssel `HAI` können wir zuerst die Positionen 1, 4, 7 usw. bearbeiten,
 
 :::
 
-## Angriffe auf die Vigenère-Chiffre
+### Angriffe auf die Vigenère-Chiffre
 
 Eine einfache Häufigkeitsanalyse wie in der letzten Lektion funktioniert hier
 nicht mehr.
@@ -817,7 +1046,7 @@ Wichtig: Die klassische Vigenère-Chiffre mit wiederholtem Schlüssel gilt heute
 
 :::
 
-## One-Time-Pad
+### One-Time-Pad
 
 Es stellt sich heraus, wenn man die Vigenère-Chiffre richtig verwendet, ist sie
 absolut unknackbar.
@@ -880,7 +1109,7 @@ Dann können wir einfach die Zahl eingeben, die neben der Klartext `0` liegt.
 
 :::
 
-## Die Enigma
+### Die Enigma
 
 Die Enigma ist der Name der Verschlüsselungsmaschine, die von Deutschland im
 zweiten Weltkrieg verwendet wurde.
@@ -933,7 +1162,7 @@ Welcher der folgenden Geheimtexte könnte den Wetterbericht enthalten?
 
 :::
 
-## Zusammenfassung
+### Zusammenfassung
 
 In diesem Kapitel haben wir die **polyalphabetische Substitution** kennengelernt. Anders als bei einer einfachen monoalphabetischen Substitution verwenden wir mehrere Geheimtextalphabete. Derselbe Klartextbuchstabe kann dadurch je nach seiner Position unterschiedlich verschlüsselt werden.
 
@@ -948,3 +1177,70 @@ Die wichtigsten Punkte sind:
 - Bei der **Enigma** konnte ein Buchstabe niemals als derselbe Buchstabe verschlüsselt werden. Vergleichen wir einen vermuteten Klartext mit dem Geheimtext, können wir deshalb bestimmte Positionen oder Vorschläge ausschliessen. Ein Vorschlag ohne solche Übereinstimmungen ist jedoch nur möglich, nicht bereits bestätigt.
 
 **Merkt euch:** Mehrere Geheimtextalphabete erschweren die Analyse, machen ein Verfahren aber nicht automatisch sicher. Entscheidend sind die Eigenschaften der Methode, die Wahl und Verwendung des Schlüssels und die Informationen, die ein Angreifer zusätzlich kennt.
+
+\newpage
+
+# Annex: Gartenzaun Verschlüsselung
+
+Wir werden einen Text mit der Gartenzaun Verschlüsselung verschlüsseln und entschlüsseln. Folge den angegebenen Schritten 
+
+1. Wähle dir ein beliebiges vier Buchstaben langes Wort aus:
+
+_________________________
+
+___     ___     ___     ___
+
+ 2. Schreibe als nächstes einen kurzen Text:
+
+_____________________________
+
+
+
+3. Schreibe nun den Satz in den Gartenzaun rein. Fange dabei ganz links oben an, und schreibe die Buchstaben in jedes der Kästchen der Diagonale entlang:
+
+![Begriffe](./3_gartenzaun.png)
+
+4. Als nächstes, schreibe jede Zeile als einziges Wort. Dabei wirst du 4 Zeilen schreiben.
+
+
+Zeile 1: _________________________
+
+Zeile 2: _________________________
+
+Zeile 3: _________________________
+
+Zeile 4: _________________________
+
+\newpage
+
+5. Nun, nummerier die Buchstaben deines Schlüssels dem Alphabet nach unterhalb deines Schlüssels. Z. B. Wenn dein Wort “NAME” ist, dann ist die Nummerierung 4, 1, 3, 2, weil diese Buchstaben nacheinander im Alphabet vorkommen. Schreibe nun die Zeilen in dieser Reihenfolge als je ein Wort.
+
+
+Geiheimtext: ________________________________________________________
+
+Gratuliere! Du hast deine erste Verschlüsselung durchgeführt!
+
+6. Schreib nochmals den Schlüssel hin:
+
+_________________________
+
+7. Gebe jetzt dieses Blatt an einen Mitschüler weiter, der die Nachricht lesen soll. Finde auch jemanden, der mit dir eine Nachricht teilen möchte. 
+
+
+8. Zur Entschlüsselung, musst du die Buchstaben im Schlüssel so nummerieren wie sie im Alphabet vorkommen:
+
+_________________________
+
+___     ___     ___     ___
+
+
+9. Schreibe nun die Wörter des Geheimtextes in der richtigen Reihenfolge. Achte dabei auf die Nummerierung: wenn du oben, z. B. In der zweiten Position eine 1 geschrieben hast, dann soll das zweite Wort als erstes geschrieben werden. 
+
+
+ ________________________________________________________
+
+10. Zu guter Letzt, schreibe nun die obigen Wörter horizontal in den Gartenzaun rein.
+
+Wenn du alles richtig gemacht hast, kannst du nun den Geheimtext lesen, indem du diagonal die Buchstaben durchliest. 
+
+Gratuliere! Nun kannst du an deinem Freund/Freundin Geheimnachrichten verschicken.

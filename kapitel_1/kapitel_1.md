@@ -285,3 +285,70 @@ Alice und Bob verwenden eine Verschlüsselungsmethode mit einem geheimen Schlüs
 4. Wie nennt man die Untersuchung von Verfahren, mit denen sich eine Nachricht ohne Kenntnis des Schlüssels rekonstruieren lässt?
 
 :::
+
+\newpage
+
+# Annexe: Gartenzaun Verschlüsselung
+
+Wir werden einen Text mit der Gartenzaun Verschlüsselung verschlüsseln und entschlüsseln. Folge den angegebenen Schritten 
+
+1. Wähle dir ein beliebiges vier Buchstaben langes Wort aus:
+
+_________________________
+
+___     ___     ___     ___
+
+ 2. Schreibe als nächstes einen kurzen Text:
+
+_____________________________
+
+
+
+3. Schreibe nun den Satz in den Gartenzaun rein. Fange dabei ganz links oben an, und schreibe die Buchstaben in jedes der Kästchen der Diagonale entlang:
+
+![Begriffe](./3_gartenzaun.png)
+
+4. Als nächstes, schreibe jede Zeile als einziges Wort. Dabei wirst du 4 Zeilen schreiben.
+
+
+Zeile 1: _________________________
+
+Zeile 2: _________________________
+
+Zeile 3: _________________________
+
+Zeile 4: _________________________
+
+\newpage
+
+5. Nun, nummerier die Buchstaben deines Schlüssels dem Alphabet nach unterhalb deines Schlüssels. Z. B. Wenn dein Wort “NAME” ist, dann ist die Nummerierung 4, 1, 3, 2, weil diese Buchstaben nacheinander im Alphabet vorkommen. Schreibe nun die Zeilen in dieser Reihenfolge als je ein Wort.
+
+
+Geiheimtext: ________________________________________________________
+
+Gratuliere! Du hast deine erste Verschlüsselung durchgeführt!
+
+6. Schreib nochmals den Schlüssel hin:
+
+_________________________
+
+7. Gebe jetzt dieses Blatt an einen Mitschüler weiter, der die Nachricht lesen soll. Finde auch jemanden, der mit dir eine Nachricht teilen möchte. 
+
+
+8. Zur Entschlüsselung, musst du die Buchstaben im Schlüssel so nummerieren wie sie im Alphabet vorkommen:
+
+_________________________
+
+___     ___     ___     ___
+
+
+9. Schreibe nun die Wörter des Geheimtextes in der richtigen Reihenfolge. Achte dabei auf die Nummerierung: wenn du oben, z. B. In der zweiten Position eine 1 geschrieben hast, dann soll das zweite Wort als erstes geschrieben werden. 
+
+
+ ________________________________________________________
+
+10. Zu guter Letzt, schreibe nun die obigen Wörter horizontal in den Gartenzaun rein.
+
+Wenn du alles richtig gemacht hast, kannst du nun den Geheimtext lesen, indem du diagonal die Buchstaben durchliest. 
+
+Gratuliere! Nun kannst du an deinem Freund/Freundin Geheimnachrichten verschicken.
