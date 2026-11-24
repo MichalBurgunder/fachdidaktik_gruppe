@@ -51,7 +51,6 @@ Nach dieser Lektion könnt ihr
 - **Schlüssel**: ein Informationsartefakt mit dem man verschlüsselte Nachrichten entschlüsseln kann. Skytale und Gartenzaun haben beide Schlüssel
 - **Permutation**: eine bestimmte Reihenfolge von vielen potenziellen Reihenfolgen. Schlüssel sind oft eine bestimmte Permutation (Wahl an Reihenfolge), die, wegen der grossen Zahl an potenziellen Reihenfolgen nicht erraten werden kann.
 - **Sprache**: Die Sprache in dem ein Klartext geschrieben 
-...
 
 Die Art von Transposition braucht viel Papier und Vorsicht, zum einen mal es zu verschlüsseln und entschlüsseln. Vor 2500 Jahren aber, gab es sehr wenig Papier und etwas zu schreiben, was auch der Grund ist warum die meisten Menschen damals dies nie gelernt haben. Für die Leute die lesen und schreiben konnten, waren typischerweise reiche Leute sowie Politiker oder Generale. 
 
@@ -203,3 +202,76 @@ Sagen wir, wir möchten Skytale als Verschlüsselungs Methode einführen. Wir m�
 Da jeder Buchstabe auf den Stab projiziert sein soll, heisst das, dass der Umfang des Kreises 4cm * 7 = 28cm sein sollte. Wir wissen auch, dass der Umfang eines Kreises `Umfang eines Kreises = Durchmesser * pi` ist. Wenn wir nun fü den Durchmesser lösen, haben wir `(Umfang eines Kreises) / pi = Durchmesser`. Wenn wir unsere Zahlen reintun, bekommen wir `28cm / pi = 8.9cm`.
 
 :::
+
+
+
+\newpage
+
+## Gartenzaun Verschlüsselung
+
+Wir werden einen Text mit der Gartenzaun Verschlüsselung verschlüsseln und entschlüsseln. Folge den angegebenen Schritten 
+
+1. Wähle dir ein beliebiges vier Buchstaben langes Wort aus:
+
+_________________________
+
+___     ___     ___     ___
+
+ 2. Schreibe als nächstes einen kurzen Text:
+
+_____________________________
+
+
+
+3. Schreibe nun den Satz in den Gartenzaun rein. Fange dabei ganz links oben an, und schreibe die Buchstaben in jedes der Kästchen der Diagonale entlang:
+
+![Begriffe](./3_gartenzaun.png)
+
+4. Als nächstes, schreibe jede Zeile als einziges Wort. Dabei wirst du 4 Zeilen schreiben.
+
+
+Zeile 1: _________________________
+
+Zeile 2: _________________________
+
+Zeile 3: _________________________
+
+Zeile 4: _________________________
+
+\newpage
+
+5. Nun, nummerier die Buchstaben deines Schlüssels dem Alphabet nach unterhalb deines Schlüssels. Z. B. Wenn dein Wort “NAME” ist, dann ist die Nummerierung 4, 1, 3, 2, weil diese Buchstaben nacheinander im Alphabet vorkommen. Schreibe nun die Zeilen in dieser Reihenfolge als je ein Wort.
+
+
+Geiheimtext: ________________________________________________________
+
+Gratuliere! Du hast deine erste Verschlüsselung durchgeführt!
+
+6. Schreib nochmals den Schlüssel hin:
+
+_________________________
+
+7. Gebe jetzt dieses Blatt an einen Mitschüler weiter, der die Nachricht lesen soll. Finde auch jemanden, der mit dir eine Nachricht teilen möchte. 
+
+
+8. Zur Entschlüsselung, musst du die Buchstaben im Schlüssel so nummerieren wie sie im Alphabet vorkommen:
+
+_________________________
+
+___     ___     ___     ___
+
+
+9. Schreibe nun die Wörter des Geheimtextes in der richtigen Reihenfolge. Achte dabei auf die Nummerierung: wenn du oben, z. B. In der zweiten Position eine 1 geschrieben hast, dann soll das zweite Wort als erstes geschrieben werden. 
+
+
+ ________________________________________________________
+
+10. Zu guter Letzt, schreibe nun die obigen Wörter horizontal in den Gartenzaun rein.
+
+Wenn du alles richtig gemacht hast, kannst du nun den Geheimtext lesen, indem du diagonal die Buchstaben durchliest. 
+
+Gratuliere! Nun kannst du an deinem Freund/Freundin Geheimnachrichten verschicken.
+
+
+
+
