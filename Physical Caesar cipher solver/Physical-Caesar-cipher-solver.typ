@@ -34,7 +34,7 @@
 
     // Draw the letters and the separator lines in between the circles
     for (index, letter) in alphabet.enumerate() {
-      let angle_increment = 360deg / alphabet.len()
+      let angle_increment = -(360deg / alphabet.len())
       let angle_line = index * angle_increment
       let line_start = (angle: angle_line, radius: radius_inner)
       let line_stop = (angle: angle_line, radius: radius_outer)
