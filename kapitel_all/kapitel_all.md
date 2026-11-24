@@ -121,7 +121,7 @@ Es geht bei der Sicherheit also nicht nur darum, eine Nachricht zu versenden, so
 
 :::
 
-### Operationale Lernziele
+### Operationalisierte Lernziele
 
 Nach dieser Lektion könnt ihr …
 
@@ -353,7 +353,7 @@ Nun wird das Material der Transposition nochnmals angeschaut:
 :::
 
 
-### Operationale Lernziele
+### Operationalisierte Lernziele
 
 Nach dieser Lektion könnt ihr
 
@@ -565,7 +565,7 @@ Beantwortet zu zweit die folgenden Fragen:
 Mit dieser Übung habt ihr die Grundidee der Caesar-Verschlüsselung kennengelernt. Caesar selbst verwendete eine Verschiebung um drei Stellen, um seine Briefe zu verschlüsseln.
 
 
-### Operationale Lernziele
+### Operationalisierte Lernziele
 
 Nach dieser Lektion könnt ihr …
 
