@@ -73,10 +73,10 @@
   ..{
     let radius_middle = (radius_inner + radius_outer) / 2
     for _ in range(number_copies) {
-        (
-          draw_letter_ring(radius_inner, radius_middle),
-          draw_letter_ring(radius_middle, radius_outer),
-        )
+      (
+        draw_letter_ring(radius_inner, radius_middle),
+        draw_letter_ring(radius_middle, radius_outer),
+      )
     }
   }
 )
